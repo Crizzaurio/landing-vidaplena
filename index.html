@@ -7,49 +7,113 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
     <title>Vida Plena</title>
 </head>
 <body>
-    <header class="TopSuperior">
-        <div class="HeaderNombre">
-            <h1>Vida Plena</h1>
+    <header>
+        <div class="top-bar">
+            <p>Atención cálida y acompañamiento en cada paso</p>
+            <div class="top-actions">
+                <a href="tel:+56912345678">+56 9 1234 5678</a>
+                <a href="#contacto">Agenda tu consulta</a>
+            </div>
         </div>
 
-        <nav class="MainNav">
-            <a href="#inicio">Inicio</a>
-            <a href="#acerca">Acerca de nosotros</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
+        <div class="TopSuperior">
+            <div class="HeaderNombre">
+                <h1>Vida Plena</h1>
+            </div>
 
-        <button class="Black" id="temaOscuro">Modo Oscuro</button>
+            <nav class="MainNav">
+                <a href="#inicio">Inicio</a>
+                <a href="#acerca">Nosotros</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+
+            <button class="theme-toggle" id="temaOscuro">Modo Oscuro</button>
+        </div>
     </header>
 
     <main>
-        <section>
-            <div>
-                <span>
-                <h3>Nuestra visión va contigo</h3>
-                <p>Buscamos darte la mejor calidad de vida</p>
-                </span>
-            </div>
-        </section>
-            <aside class="ingreso">
-                <p>
-                    Para cotizar puedes contactar con un ejecutivo
-                </p>
-                <button class="encuestaIngreso" id="botonEncuesta">Cotiza tu atención</button>
-        </aside>
-        <section>
-            <img src="img/dr_fondo_main.jpg" alt="Doctora" width="900">
+        <div class="content-area">
+            <section class="hero">
+                <div class="hero-copy">
+                    <h3>Nuestra visión va contigo</h3>
+                    <p>Buscamos darte la mejor calidad de vida con calma, respaldo y confianza.</p>
+                </div>
+            </section>
+        </div>
+
+        <section class="imagen">
+            <img src="img/dr_fondo_main.jpg" alt="Doctora">
         </section>
 
+        <aside class="imagenAmbulancia">
+            <img src="img/ambulancia_vertical.jpg" alt="ambulancia_vertical">
+        </aside>
+
+        <aside class="ingreso">
+            <p>Para cotizar puedes contactar con un ejecutivo y recibir atención personalizada.</p>
+            <button class="encuestaIngreso" id="botonEncuesta">Cotiza tu atención</button>
+        </aside>
+        <aside class="certificado">
+            <p>Reconocidos por las principales Facultades médicas del país.</p>
+            <button class="certificadoButton" id="verCertificado">Ver certificados</button>
+        </aside>
+
+        <section class="experiencias">
+            <h3>Experiencias reales</h3>
+            <div class="experiencia-list">
+                <article class="experiencia-card">
+                    <h4>Alex Tintor</h4>
+                    <p>"Todo ha sido maravilloso, la atención es rápida y eficiente. Me tratan como es debido"</p>
+                    <div class="imagen-persona" id="img-alex" aria-label="Imagen de Alex Tintor"><img src="img/alexTintor.jpg" alt="alex_tintor"></div>
+                </article>
+
+                <article class="experiencia-card">
+                    <h4>Joel Miller</h4>
+                    <p>"Para la época de pandemia enviaron un especialista a mi casa, y mi hija se pudo curar de una rara enfermedad"</p>
+                    <div class="imagen-persona" id="img-joel" aria-label="Imagen de Joel Miller"><img src="img/joelMiller.webp" alt="joel_miller"></div>
+                </article>
+            </div>
+        </section>
+        <section class="sservicios servicios">
+            <h3>Porque elegirnos</h3>
+            <div class="servicios-list">
+                <article>
+                    <h4>Atención a domicilio</h4>
+                    <p>Enviamos una unidad a tu casa para que no tengas que moverte para poder atenderte.</p>
+                </article>
+                <article>
+                    <h4>Procedimientos de enfermería</h4>
+                    <p>Te acompañamos en procesos de recuperación post operatorios, aunque no hayas pasado por nuestros quirófanos.</p>
+                </article>
+                <article>
+                    <h4>Accesibilidad</h4>
+                    <p>Aceptamos bonos de Fonasa e Isapre, además de tener beneficios por tratamientos de larga duración.</p>
+                </article>
+            </div>
+        </section>
+        <section class="correo">
+            <h5>Envíanos tu email y podemos contactarte directamente</h5>
+            <div class="correoInput">
+                <input idtype="email">
+            </div>
+            <button>Enviar</button>
+        </section>
     </main>
 
     <footer class="footer">
-
+        <section>
+            <a href="#instagram">Instagram</a>
+            <a href="#facebook">Facebook</a>
+            <a href="#x">X</a> 
+        </section>
+        <section>
+            <p>Página creada por Cristóbal Oliva</p>
+        </section>
     </footer>
-
-
-
 </body>
 </html>

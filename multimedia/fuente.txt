@@ -1,6 +1,14 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
+Fuente logo
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+
+Fuente texto
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap" rel="stylesheet">
+
+--------------------------------------------
 
 HTML Colores:
 Cuadros de texto #6DE39A

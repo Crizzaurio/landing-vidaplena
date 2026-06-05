@@ -1,39 +1,441 @@
-*{
-    box-sizing: border-box;
-    background-color: #6DB6E3;
+/* Diseño de la página */
+
+body {
+    margin: 0;
+    font-family: 'Commissioner', sans-serif;
+    background: #e8f3fb;
+    color: #2d4f6f;
+    line-height: 1.6;
 }
 
-/* Header */
-header{
-    background-color: #6DB6E3;
+img {
+    max-width: 100%;
+    display: block;
 }
 
-.headerNombre{
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 2rem;
+    background: #d6eafd;
+    color: #3c5f7b;
+    font-size: 0.95rem;
+}
+
+.top-bar .top-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.top-bar .top-actions a {
+    color: #3c5f7b;
+    font-weight: 600;
+}
+
+.TopSuperior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem 2rem;
+    background: #e1f0fb;
+    box-shadow: 0 12px 30px rgba(56, 111, 148, 0.18);
+}
+
+.HeaderNombre h1 {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    margin: 0;
+    font-size: 2.4rem;
+    letter-spacing: 0.05em;
+    color: #234f74;
+}
+
+.MainNav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.MainNav a {
+    color: #3c6e94;
+    font-weight: 600;
+    transition: color 0.25s ease;
+}
+
+.MainNav a:hover {
+    color: #1f5d82;
+}
+
+.theme-toggle,
+.encuestaIngreso,
+.certificadoButton {
+    border: none;
+    border-radius: 999px;
+    padding: 0.9rem 1.4rem;
+    cursor: pointer;
+    font-weight: 700;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.theme-toggle {
+    background: #6db6e3;
+    color: #fff;
+}
+
+.certificadoButton {
+    color: #fff;
+    background: linear-gradient(135deg, #4acc60 0%, #6db6e3 100%);
+}
+
+.experiencias{
+    align-self: start;
+    padding: 2rem;
+    background: #e6f2fa;
+    border-radius: 28px;
+    box-shadow: 0 18px 40px rgba(56, 111, 148, 0.14);
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    grid-column: 1 / -1;
+}
+
+.experiencias h3{
+    margin: 0 0 0.5rem 0;
+    color: #234f74;
+}
+
+.experiencia-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.experiencia-card{
+    padding: 1rem;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(56, 111, 148, 0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    color: #4b6f8f;
+}
+
+.sservicios,
+.servicios {
+    align-self: start;
+    padding: 2rem;
+    background: #e6f2fa;
+    border-radius: 28px;
+    box-shadow: 0 18px 40px rgba(56, 111, 148, 0.14);
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    grid-column: 1 / -1;
+}
+
+.sservicios h3,
+.servicios h3 {
+    margin: 0 0 0.5rem 0;
+    color: #234f74;
+}
+
+.servicios-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.sservicios article,
+.servicios article {
+    padding: 1.2rem;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(56, 111, 148, 0.06);
+    color: #4b6f8f;
+}
+
+.sservicios article h4,
+.servicios article h4 {
+    margin: 0 0 0.65rem 0;
+    color: #2b5673;
+}
+
+.sservicios article p,
+.servicios article p {
+    margin: 0;
+    font-style: normal;
+    line-height: 1.5;
+}
+
+.correo {
+    align-self: start;
+    padding: 2rem;
+    background: #e6f2fa;
+    border-radius: 28px;
+    box-shadow: 0 18px 40px rgba(56, 111, 148, 0.14);
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    grid-column: 1 / -1;
+}
+
+.correo h5 {
+    margin: 0;
+    color: #234f74;
+}
+
+.correo input {
+    width: 100%;
+    padding: 0.95rem 1rem;
+    border-radius: 20px;
+    border: 1px solid #c8dbea;
+    background: #ffffff;
+    color: #234f74;
+    font-size: 1rem;
+}
+
+.correo button {
+    border: none;
+    border-radius: 999px;
+    padding: 0.9rem 1.4rem;
+    cursor: pointer;
+    font-weight: 700;
+    background:  #6db6e3;
+    color: #fff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: fit-content;
+}
+
+.correoInput{
+    align-items: center;
+    margin-right: 40px;
+}
+
+.correo button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px rgba(71, 124, 161, 0.22);
+}
+
+.experiencia-card h4{
+    margin: 0;
+    color: #2b5673;
+}
+
+.experiencia-card p{
+    margin: 0;
+    font-style: normal;
+}
+
+.imagenAmbulancia{
+    height: 430px;
+    width: 100%;
+    border-radius: 28px;
+    display: block;
+    overflow: hidden;
+    flex-shrink: 0;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.imagenAmbulancia img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.imagen-persona{
+    height: 110px;
+    width: 100%;
+    background: #dbeff8;
+    border-radius: 12px;
+    margin-top: auto;
     display: flex;
     align-items: center;
+    justify-content: center;
+    color: #0f3047;
+    overflow: hidden;
+    flex-shrink: 0;
 }
 
-main{
-    background-color: #6DB6E3;
-    color: #17075a;
+.imagen-persona img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
-.MainNav{
-    color: aliceblue;
-
+.theme-toggle:hover,
+.encuestaIngreso:hover,
+.certificadoButton:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px rgba(71, 124, 161, 0.22);
 }
 
-aside {
-    width: 30%;
-    padding-left: 15px;
-    margin-left: 15px;
-    float: right;
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 1180px;
+    margin: 2rem auto 3rem;
+    padding: 0 2rem;
+}
+
+.content-area {
+    display: grid;
+    gap: 2rem;
+    grid-column: 1 / -1;
+}
+
+.hero {
+    background: linear-gradient(135deg, #eef8fd 0%, #d3eaf7 100%);
+    border-radius: 28px;
+    padding: 2.2rem;
+    box-shadow: 0 14px 40px rgba(56, 111, 148, 0.12);
+}
+
+.hero-copy h3 {
+    margin: 0 0 1rem;
+    font-size: clamp(2rem, 3.5vw, 3.2rem);
+    color: #2b5673;
+}
+
+.hero-copy p {
+    margin: 0;
+    max-width: 650px;
+    font-size: 1.1rem;
+    color: #385d7a;
+}
+
+.imagen {
+    overflow: hidden;
+    border-radius: 28px;
+    box-shadow: 0 14px 40px rgba(56, 111, 148, 0.12);
+    width: 100%;
+    height: 400px;
+    flex-shrink: 0;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.ingreso {
+    align-self: start;
+    padding: 2rem;
+    background: #e6f2fa;
+    border-radius: 28px;
+    box-shadow: 0 18px 40px rgba(56, 111, 148, 0.14);
     font-style: italic;
-    background-color: #6DE39A;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    grid-column: 1;
+    grid-row: 2;
 }
 
-.encuestaIngreso{
-    color: aliceblue;
-    background-color: #2E7671;
+.ingreso p {
+    margin: 0;
+    color: #4b6f8f;
+}
+
+.encuestaIngreso {
+    color: #fff;
+    background: linear-gradient(135deg, #6db6e3 0%, #4acc60 100%);
+}
+
+.certificado{
+    align-self: start;
+    padding: 2rem;
+    background: #e6f2fa;
+    border-radius: 28px;
+    box-shadow: 0 18px 40px rgba(56, 111, 148, 0.14);
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.certificado p{
+    margin: 0;
+    color: #4b6f8f;
+}
+
+.certificadoButton {
+    color: #fff;
+    background: linear-gradient(135deg, #4acc60 0%, #6db6e3 100%);
+}
+
+.footer {
+    padding: 2rem 1rem;
+    text-align: center;
+    color: #26465c;
+    background: #c9dae6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.05rem;
+}
+
+.footer span,
+.footer a {
+    display: block;
+    margin: 0rem 0;
+    font-weight: 600;
+}
+
+.footer a {
+    color: #1f4967;
+}
+
+.footer a:hover {
+    color: #0f3047;
+}
+
+@media (max-width: 900px) {
+    .TopSuperior,
+    .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .ingreso {
+        width: 100%;
+    }
+
+    .experiencia-list{
+        grid-template-columns: 1fr;
+    }
+
+    .servicios-list {
+        grid-template-columns: 1fr;
+    }
 }
 
