@@ -9,9 +9,3 @@ Fuente texto
 <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap" rel="stylesheet">
 
 --------------------------------------------
-
-HTML Colores:
-Cuadros de texto #6DE39A
-Acentos #6DE3D5
-Backgrounds #6DB6E3
-Texto #17075a

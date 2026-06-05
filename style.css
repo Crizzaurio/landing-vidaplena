@@ -134,7 +134,7 @@ header {
     color: #4b6f8f;
 }
 
-.sservicios,
+.servicios,
 .servicios {
     align-self: start;
     padding: 2rem;
@@ -438,4 +438,3 @@ main {
         grid-template-columns: 1fr;
     }
 }
-
