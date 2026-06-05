@@ -1,1 +1,39 @@
-/* Estilos generales */
+*{
+    box-sizing: border-box;
+    background-color: #6DB6E3;
+}
+
+/* Header */
+header{
+    background-color: #6DB6E3;
+}
+
+.headerNombre{
+    display: flex;
+    align-items: center;
+}
+
+main{
+    background-color: #6DB6E3;
+    color: #17075a;
+}
+
+.MainNav{
+    color: aliceblue;
+
+}
+
+aside {
+    width: 30%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+    background-color: #6DE39A;
+}
+
+.encuestaIngreso{
+    color: aliceblue;
+    background-color: #2E7671;
+}
+
